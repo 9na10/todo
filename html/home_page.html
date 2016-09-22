@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taski</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.3.js"
+      integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap-datepicker.min.js"></script>
+    <link href="../css/bootstrap-datepicker.css" rel="stylesheet" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/locale/en-ie.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.9.0/fullcalendar.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.9.0/fullcalendar.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.9.0/fullcalendar.print.css" rel="stylesheet" media="print">
+
+    <script src="../js/login_page.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/add_remove_task.js"></script>
+    <script src="../js/star_checkbox_work.js"></script>
+    <script src="../js/task_details.js"></script>
+    <script src="../js/displayFolders.js"></script>
+    <script src="../js/calendar.js"></script>
+    <script src="../js/scheduleTasks.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <header>
+      <ul class="folders">
+        <li class="home_page">
+          <span class="glyphicon glyphicon-stop"></span>
+          <a href="#">PROJECTS</a>
+        </li>
+        <li class="important">
+          <span class="glyphicon glyphicon-star yellow"></span>
+          <a href="#">IMPORTANT</a>
+        </li>
+      </ul>
+    </header>
+    <section class="tasks_container">
+      <ul class="tasks"></ul>
+      <button type="button" class="btn btn-primary addTask">Add new task</button>
+    </section>
+
+    <section class="details">
+      <button type="button" class="btn btn-default calendarIcon">
+        <span class="glyphicon glyphicon-calendar"></span>CALENDAR
+      </button>
+      <button type="button" class="btn btn-default scheduleIcon">
+        <span class="glyphicon glyphicon-list"></span>SCHEDULE
+      </button>
+      <div class="description"></div>
+      <form class="newTaskForm"></form>
+    </section>
+
+    <section>
+      <form class="settings_new_projects">
+        <span class="glyphicon glyphicon-remove remove_in_settings_new_projects"></span>
+        <label for="folderName">Folder name</label>
+        <input type="text" id="folderName" name="name">
+        <label for="colors">Color</label>
+        <input type="hidden" id="chosenColor" name="color">
+        <span class='glyphicon glyphicon-stop colors' data-color ="#215670" style="color: #215670"></span>
+        <span class='glyphicon glyphicon-stop colors' data-color ="#FF6699" style="color: #FF6699"></span>
+        <span class='glyphicon glyphicon-stop colors' data-color ="#4C4C4C" style="color: #4C4C4C"></span>
+        <span class='glyphicon glyphicon-stop colors' data-color ="#003366" style="color: #003366"></span>
+        <span class='glyphicon glyphicon-stop colors' data-color ="#800040" style="color: #800040"></span>
+        <span class='glyphicon glyphicon-stop colors' data-color ="#FFFF66" style="color: #FFFF66"></span>
+        <span class='glyphicon glyphicon-stop colors' data-color ="#4285F4" style="color: #4285F4"></span>
+        <span class='glyphicon glyphicon-stop colors' data-color ="#F4B400" style="color: #F4B400"></span>
+        <span class='glyphicon glyphicon-stop colors' data-color ="#000000" style="color: #000000"></span>
+        <span class='glyphicon glyphicon-stop colors' data-color ="#0F9D58" style="color: #0F9D58"></span>
+        <span class='glyphicon glyphicon-stop colors' data-color ="#DB4437" style="color: #DB4437"></span>
+        <div>
+          <button class="btn btn-primary save_folder">Confirm</button>
+          <button class="btn btn-danger remove_folder">Remove</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

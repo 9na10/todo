@@ -1,0 +1,249 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+h2 {
+  font-size: 18px;
+}
+body, .changeBackground, .form-control {
+  background-color: #F3F3F3;
+}
+ul {
+  list-style-type: none;
+}
+
+/*LOGGING APPLICATION*/
+.white {
+  background-color: #fff;
+}
+.logForm {
+  width: 274px;
+  padding: 100px 40px 40px 40px;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  border-radius: 2px 2px;
+  font-family: Arial, sans-serif;
+  box-shadow: 1px 1px 12px -2px rgba(153,142,142,0.77);
+}
+.logForm input, .logForm button {
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px;
+}
+.logForm #signIn {
+  border: 1px solid #3079ed;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  background-color: #4d90fe;
+}
+.white p {
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 300;
+}
+.warning {
+  color: red;
+}
+
+/*SETTINGS FOR DISPLAY TASKS*/
+.tasks li, .scheduledTasks li {
+  margin-top: 5px;
+  padding: 10px;
+}
+.tasks li {
+  background-color: #fff;
+}
+.tasks .glyphicon-star {
+  color: #cccccc;
+  padding-left: 15px;
+}
+.yellow {
+  color: #FCC200 !important;
+}
+input[type=checkbox] {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.tasks, .tasks_container {
+  border-bottom: 3px solid #CCCCCC;
+}
+.tasks {
+  padding: 0 0 30px 0;
+}
+.tasks_container {
+  background-color: #F1F1F1;
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  overflow: scroll;
+  width:60%;
+}
+.scheduleIcon {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+.scheduledTasks li {
+  box-shadow: 0px 2px 1px -1px #e1e1e1;
+}
+
+/*SETTINGS FOR CREATE NEW TASK*/
+.form-control {
+  width: 75%;
+}
+.deadline span, .folderSelection span {
+  margin-right: 8px;
+}
+.deadline, .folderSelection, .inputStore {
+  margin-top: 20px;
+}
+.removalTask {
+  margin: 0 0 0 10px;
+}
+.newTaskForm {
+  margin-top: 160px;
+}
+
+/*SETTINGS FOR DETAILS (right site page)*/
+.details {
+  background-image: url("../photo/background.jpg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  width: 40%;
+  padding: 10px 0 0 30px;
+}
+.showAllTasks {
+  width: 60%;
+  overflow: auto;
+}
+
+/*SETTINGS FOR FOLDERS*/
+.folders {
+  padding: 0px;
+  position: absolute;
+  top: 10px;
+  width: 25%;
+  left: 40px;
+}
+.folders:hover {
+  bottom: 0;
+  overflow: auto;
+  z-index: 1;
+}
+.folder, .folders li:first-child, .important, .add_folder {
+  padding: 10px 20px;
+}
+.folder, li.important, .add_folder {
+  display: none;
+  background-color: #fff;
+}
+.folders li:hover {
+  background-color: #F1F1F1;
+}
+.folders:hover li {
+  display:block;
+}
+.glyphicon-plus, .glyphicon-stop {
+  color:#563d7c;
+}
+.folders li a {
+  text-decoration: none;
+  color: #000000;
+}
+.add_folder {
+  border-top: 2px solid #666;
+}
+.new_project {
+  position:absolute;
+  top: 10px;
+  right: 40%;
+  padding: 20px;
+  width: 50%;
+}
+.settings_new_projects {
+  display: none;
+  position: absolute;
+  top:20%;
+  left: 30%;
+  right: 30%;
+  bottom: 40%;
+  background: #fefefe;
+  z-index: 9999;
+  box-shadow: 1px 1px 5px #ccc;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  padding: 10px 0 10px 3%;
+}
+.settings_new_projects label {
+  display: block;
+}
+.settings_new_projects, .new_project {
+  position: absolute;
+}
+.settings_new_projects {
+  width: 600px;
+}
+#folderName {
+  border: 2px solid #CCCCCC;
+  width: 70%;
+}
+ .settings_new_projects label, .settings_new_projects div {
+  margin: 15px 0 4px 0px;
+}
+.glyphicon.glyphicon-remove {
+  position: absolute;
+  right: 0px;
+  padding: 7px;
+  color: #555555;
+}
+.changeBorder {
+  border: 3px solid #000000;
+}
+.glyphicon-trash {
+  float: right;
+  color: #EA4335;
+}
+.selectFolder {
+  color: #000000;
+  width: 43%;
+}
+
+/*SETTINGS FOR CALENDAR*/
+.calendarIcon {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+.glyphicon-calendar, .glyphicon-list {
+  color: grey;
+  margin-right: 3px;
+}
+.calendarPlace {
+  position: absolute;
+  z-index: 999999999;
+  width: 100%;
+  height: 100%;
+}
+#calendar {
+  background: #F1F1F1;
+  color: black;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  padding: 20px;
+}
